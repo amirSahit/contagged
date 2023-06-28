@@ -1,5 +1,8 @@
 require("@matterlabs/hardhat-zksync-solc");
 
+const dotenv = require("dotenv");
+dotenv.config();
+
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   zksolc: {
