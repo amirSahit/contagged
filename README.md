@@ -14,11 +14,13 @@ LINK (loom , youtube)
 
 ## Slideshow
 
-LINK - (canva, google slides)
+[Pitch Presentation](https://www.canva.com/design/DAFnILDLDD0/mIYKuEGKmyEXhUXS1ZWXUg/view?utm_content=DAFnILDLDD0&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink)
 
 ## Address of Deployed contract
 
-https://alfajores.celoscan.io//address/0x1c8260956aDa8E0dE20c8Ad16C66e65D978E090d
+[0x1c8260956aDa8E0dE20c8Ad16C66e65D978E090d](https://alfajores.celoscan.io//address/0x1c8260956aDa8E0dE20c8Ad16C66e65D978E090d)
+
+[0x1c8260956aDa8E0dE20c8Ad16C66e65D978E090d](https://mumbai.polygonscan.com/address/0x1c8260956aDa8E0dE20c8Ad16C66e65D978E090d)
 
 ## Problem
 
@@ -44,4 +46,4 @@ tbd
 ## How to continue
 
 - make transactions gasless
-- 
+- use Account Abstraction
