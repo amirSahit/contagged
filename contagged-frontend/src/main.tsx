@@ -7,6 +7,8 @@ import Login from "./pages/Login.tsx";
 import Register from "./pages/Register.tsx";
 import Home from "./pages/Home.tsx";
 
+import { ChakraProvider } from "@chakra-ui/react"
+
 export const router = createBrowserRouter([
   {
     path: "/",
@@ -28,6 +30,8 @@ export const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ChakraProvider>
+      <RouterProvider router={router} />
+    </ChakraProvider>
   </React.StrictMode>
 );
