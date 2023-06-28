@@ -1,5 +1,8 @@
 require("@matterlabs/hardhat-zksync-solc");
 
+const dotenv = require("dotenv");
+dotenv.config();
+
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   zksolc: {
@@ -23,6 +26,21 @@ module.exports = {
       ethNetwork: "mainnet",
       chainId: 324,
       zksync: true,
+    },
+    matic: {
+      url: 'https://rpc-mumbai.maticvigil.com',
+      accounts: [`${process.env.PRIVATE_KEY}`],
+      chainId: 137,
+    },
+    alfajores: {
+      url: "https://alfajores-forno.celo-testnet.org",
+      accounts: [`${process.env.PRIVATE_KEY}`],
+      chainId: 44787,
+    },
+    celo: {
+      url: "https://forno.celo.org",
+      accounts: [`${process.env.PRIVATE_KEY}`],
+      chainId: 42220,
     },
   },
   paths: {
