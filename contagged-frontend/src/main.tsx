@@ -6,6 +6,7 @@ import LandingPage from "./pages/LandingPage.tsx";
 import Login from "./pages/Login.tsx";
 import Register from "./pages/Register.tsx";
 import Home from "./pages/Home.tsx";
+import Settings from "./pages/Settings.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ export const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: "/settings",
+    element: <Settings />,
   },
 ]);
 
