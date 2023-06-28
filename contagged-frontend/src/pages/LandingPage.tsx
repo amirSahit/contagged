@@ -30,7 +30,8 @@ function LandingPage() {
               Contagged
             </h1>
           </div>
-          <p className="text-lg">Unleash connections, seamlessly</p>
+          <p className="text-2xl mt-4">Unleash connections,</p>
+          <p className="text-2xl">seamlessly</p>
         </div>
         <div className="flex flex-col gap-2">
           <NavLink to="/login" className="loginButton">

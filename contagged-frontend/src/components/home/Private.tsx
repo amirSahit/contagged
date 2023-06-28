@@ -2,9 +2,8 @@ function Private() {
   return (
     <div className="h-[310px]">
       <div className="privateScreen">
-        <h2 className="text-2xl">Collection</h2>
-        <div className="flex flex-col gap-2 p-2">
-          <h3>Platinum</h3>
+        <div className="flex flex-col gap-2 p-4">
+          <h3 className="text-lg">Platinum</h3>
           <div className="flex flex-row gap-2">
             <img
               src="../images/cat.gif"
@@ -12,8 +11,8 @@ function Private() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-2 p-2">
-          <h3>Gold</h3>
+        <div className="flex flex-col gap-2 p-4">
+          <h3 className="text-lg">Gold</h3>
           <div className="flex flex-row gap-2">
             <img
               src="../images/space-odyssey.jpeg"
@@ -29,8 +28,8 @@ function Private() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-2 p-2">
-          <h3>Silver</h3>
+        <div className="flex flex-col gap-2 p-4">
+          <h3 className="text-lg">Silver</h3>
           <div className="flex flex-row gap-2">
             <img
               src="../images/tisch.jpeg"
@@ -50,8 +49,8 @@ function Private() {
             />
           </div>
         </div>
-        <div className="flex flex-col gap-2 p-2">
-          <h3>Bronze</h3>
+        <div className="flex flex-col gap-2 p-4">
+          <h3 className="text-lg">Bronze</h3>
           <div className="flex flex-row gap-2">
             <img
               src="../images/alison.webp"

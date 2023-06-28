@@ -15,7 +15,7 @@
 }
 
 .screen {
-  @apply flex flex-col justify-around items-center border-4 border-solid rounded-md h-[800px] bg-gradient-to-r from-cyan-200/90 to-blue-200/90;
+  @apply flex flex-col justify-around items-center border-4 border-solid rounded-md h-[800px] bg-gradient-to-r from-blue-100/90 to-blue-300/90;
 }
 
 .homeScreen {
@@ -23,10 +23,14 @@
 }
 
 .privateScreen {
-  height: 375px;
+  height: 418px;
   overflow-y: auto;
 }
 
 .gray {
   @apply bg-gray-300;
+}
+
+.white {
+  @apply bg-white;
 }

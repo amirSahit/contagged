@@ -31,16 +31,22 @@ function Login() {
           </h1>
         </div>
         <div className="flex flex-col gap-4">
-          <input
-            className="border border-solid rounded-md p-2 w-[300px] text-blue-700"
-            type="text"
-            placeholder="Email"
-          />
-          <input
-            className="border border-solid rounded-md p-2 w-[300px] text-blue-700"
-            type="password"
-            placeholder="Password"
-          />
+          <div className="flex flex-col gap-1">
+            <label className="text-lg">Email</label>
+            <input
+              className="border border-solid rounded-md p-2 w-[300px] text-blue-700"
+              type="text"
+              placeholder="Email"
+            />
+          </div>
+          <div className="flex flex-col gap-1">
+            <label className="text-lg">Password</label>
+            <input
+              className="border border-solid rounded-md p-2 w-[300px] text-blue-700"
+              type="password"
+              placeholder="Password"
+            />
+          </div>
         </div>
         <NavLink to="/home" className="loginButton">
           Login

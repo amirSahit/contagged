@@ -5,8 +5,8 @@ function MyCollection() {
       fill="none"
       viewBox="0 0 24 24"
       stroke-width="1.5"
-      stroke="currentColor"
-      className="w-6 h-6"
+      stroke="white"
+      className="w-9 h-9"
     >
       <path
         stroke-linecap="round"
