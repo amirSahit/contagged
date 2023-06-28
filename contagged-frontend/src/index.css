@@ -17,3 +17,16 @@
 .screen {
   @apply flex flex-col justify-around items-center border-4 border-solid rounded-md h-[800px];
 }
+
+.homeScreen {
+  @apply flex flex-col justify-between border-4 border-solid rounded-md h-[800px];
+}
+
+.privateScreen {
+  height: 375px;
+  overflow-y: auto;
+}
+
+.gray {
+  @apply bg-gray-300;
+}
