@@ -11,24 +11,32 @@ import clsx from "clsx";
 function Home() {
   const [window, setWindow] = useState("privat");
   return (
-    <div className="w-[480px]">
-      <div className="homeScreen">
-        <div className="h-[250px] w-full border-4 border-solid text-center">
+    <div className="homeScreen">
+      <div>
+        <div className="flex justify-center h-[250px] w-full bg-gradient-to-r from-blue-100/90 to-blue-300/90">
           <img
             src="../images/giphy.gif"
-            className="border-4 border-solid rounded-full w-[200px] h-[200px] mx-auto my-4"
+            className="rounded-full border-4 border-solid border-blue-700 w-[200px] h-[200px] mx-auto my-4"
           />
         </div>
         <div>
           <div className="flex flex-row justify-around">
             <button
-              className="flex flex-row justify-around w-full border-4 border-solid"
+              className={clsx(
+                "flex flex-row justify-around items-center w-full h-14",
+                window === "privat" ? "bg-blue-200" : "bg-blue-700 text-white"
+              )}
               onClick={() => setWindow("privat")}
             >
               Privat
             </button>
             <button
-              className="flex flex-row justify-around w-full border-4 border-solid"
+              className={clsx(
+                "flex flex-row justify-around items-center w-full h-14",
+                window === "professional"
+                  ? "bg-blue-200"
+                  : "bg-blue-700 text-white"
+              )}
               onClick={() => setWindow("professional")}
             >
               Professional
@@ -43,8 +51,8 @@ function Home() {
             <Professional />
           </div>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 }

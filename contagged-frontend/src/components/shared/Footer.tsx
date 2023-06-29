@@ -5,21 +5,21 @@ import Setting from "../../utils/svg/Setting";
 
 function Footer() {
   return (
-    <footer className="border-4 border-solid flex flex-row justify-around p-2">
+    <footer className="flex flex-row justify-around p-2 bg-blue-700">
       <NavLink to="/home" className="flex flex-col justify-center items-center">
         <MyCollection />
-        My Collection
+        <p className="text-xs text-white">My Collection</p>
       </NavLink>
       <NavLink to="/home" className="flex flex-col justify-center items-center">
         <Search />
-        Search
+        <p className="text-xs text-white">Search</p>
       </NavLink>
       <NavLink
         to="/settings"
         className="flex flex-col justify-center items-center"
       >
         <Setting />
-        Settings
+        <p className="text-xs text-white">Settings</p>
       </NavLink>
     </footer>
   );
