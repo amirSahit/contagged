@@ -10,13 +10,27 @@ import clsx from "clsx";
 
 function Home() {
   const [window, setWindow] = useState("privat");
+  const [flip, setFlip] = useState(false);
   return (
     <div className="homeScreen">
       <div>
-        <div className="flex justify-center h-[250px] w-full bg-gradient-to-r from-blue-100/90 to-blue-300/90">
+        <div
+          className="flex justify-center h-[250px] w-full bg-gradient-to-b from-blue-100/90 to-blue-300/90"
+          onClick={() => setFlip(!flip)}
+        >
           <img
             src="../images/giphy.gif"
-            className="rounded-full border-4 border-solid border-blue-700 w-[200px] h-[200px] mx-auto my-4"
+            className={clsx(
+              "rounded-full border-4 border-solid border-blue-700 w-[200px] h-[200px] mx-auto my-4",
+              flip ? "hidden" : "visible"
+            )}
+          />
+          <img
+            src="../images/qr.png"
+            className={clsx(
+              "rounded-full border-4 border-solid border-blue-700 w-[200px] h-[200px] mx-auto my-4",
+              flip ? "visble" : "hidden"
+            )}
           />
         </div>
         <div>
@@ -24,7 +38,9 @@ function Home() {
             <button
               className={clsx(
                 "flex flex-row justify-around items-center w-full h-14",
-                window === "privat" ? "bg-blue-200" : "bg-blue-700 text-white"
+                window === "privat"
+                  ? "bg-blue-300/90"
+                  : "bg-blue-700 text-white border-4 border-solid border-white"
               )}
               onClick={() => setWindow("privat")}
             >
@@ -34,8 +50,8 @@ function Home() {
               className={clsx(
                 "flex flex-row justify-around items-center w-full h-14",
                 window === "professional"
-                  ? "bg-blue-200"
-                  : "bg-blue-700 text-white"
+                  ? "bg-blue-300/90"
+                  : "bg-blue-700 text-white bg-blue-700 text-white border-4 border-solid border-white"
               )}
               onClick={() => setWindow("professional")}
             >

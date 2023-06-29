@@ -7,6 +7,7 @@ import Login from "./pages/Login.tsx";
 import Register from "./pages/Register.tsx";
 import Home from "./pages/Home.tsx";
 import Settings from "./pages/Settings.tsx";
+import Collect from "./pages/Collect.tsx";
 
 export const router = createBrowserRouter([
   {
@@ -28,6 +29,10 @@ export const router = createBrowserRouter([
   {
     path: "/settings",
     element: <Settings />,
+  },
+  {
+    path: "/collect",
+    element: <Collect />,
   },
 ]);
 
