@@ -5,7 +5,7 @@ Unleash connections, seamlessly.
 ## Team
 
 - Jan - Product Management & Pitch - Github: / - Discord: bleethras - Telegram: @bleethras
-- Amit - Frontend & Design - Github: intertemp - Discord: Amrs95 - Telegram: /
+- Amir - Frontend & Design - Github: intertemp - Discord: Amrs95 - Telegram: /
 - Valerie - Backend - Github: VMLVaske - Discord: 0xlilith - Telegram: @vlrvsk
 
 ## Links
